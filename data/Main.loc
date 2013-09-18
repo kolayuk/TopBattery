@@ -1,0 +1,17 @@
+/*
+========================================================================
+ Name        : Main.loc
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_16
+#include "Main.l16"
+#endif

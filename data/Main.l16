@@ -1,0 +1,39 @@
+/*
+========================================================================
+ Name        : Main.l16
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+// localized strings for language: Russian (16)
+CHARACTER_SET UTF8
+
+#define STR_MainView_3 "TopBattery"
+#define STR_MainView_1 "Меню"
+#define STR_AboutHeader "TopBattery v.1.0 - О программе"
+#define STR_AboutText "TopBattery - приложение показывающее заряд батареи в выбранных приложениях\n Разработчик: Усанов-Корнилов Николай aka Kolay\nWeb: http://kolaysoft.ru/\nSupport: kolayuk@mail.ru\nTwitter: @kolayuk\n Мои реквизиты:\n"
+#define STR_MainView_2 "Свернуть"
+#define STR_MainView_7 "Изменить"
+#define STR_MainView_8 "О программе"
+#define STR_MainView_10 "Выход"
+#define STR_MainView_20 "Приложения"
+#define STR_MainView_21 ""
+#define STR_MainView_12 "Положение Y (портрет)"
+#define STR_MainView_13 ""
+#define STR_MainView_14 "Положение Х (ланшафт)"
+#define STR_MainView_15 ""
+#define STR_MainView_16 "Положение Y (ланшафт)"
+#define STR_MainView_17 ""
+#define STR_MainView_18 "Скин"
+#define STR_MainView_19 ""
+#define STR_MainView_4 "Положение Х (портрет)"
+#define STR_MainView_5 ""
+#define STR_MainView_6 "Масштабирование (%)"
+#define STR_MainView_9 ""

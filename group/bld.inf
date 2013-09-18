@@ -1,0 +1,26 @@
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+
+#ifdef SBSV2
+
+PRJ_EXTENSIONS
+	
+	START EXTENSION s60/mifconv
+	OPTION TARGETFILE topbattery_0xE3E97C30.mif
+	OPTION HEADERFILE topbattery_0xE3E97C30.mbg
+	OPTION SOURCEDIR ../gfx
+	OPTION SOURCES -c32 qgn_menu_TopBattery
+	END
+
+#else
+
+PRJ_MMPFILES
+
+	gnumakefile icons_scalable_dc.mk
+
+#endif
+
+PRJ_MMPFILES
+TopBattery.mmp

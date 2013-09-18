@@ -1,0 +1,47 @@
+
+TARGET			TopBattery.exe
+UID			   0x100039CE 0xE3E97C30
+VENDORID	  	  0
+TARGETTYPE		exe
+EPOCSTACKSIZE	 0x5000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+
+SOURCEPATH		..\data
+START RESOURCE	TopBattery.rss
+HEADER
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE E3E97C30.rss
+END
+
+START RESOURCE	TopBattery_reg.rss
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib
+LIBRARY			commonengine.lib efsrv.lib estor.lib eikcoctl.lib eikdlg.lib 
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib
+LIBRARY			etel3rdparty.lib ws32.lib imageconversion.lib apgrfx.lib flogger.lib bitmaptransforms.lib
+
+LANG 				16
+
+START BITMAP	TopBattery.mbm
+HEADER
+TARGETPATH		\resource\apps
+SOURCEPATH		..\gfx
+SOURCE	c12,1	list_icon.bmp list_icon_mask.bmp
+END
+
+SOURCEPATH		..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE Main.cpp MainView.cpp TopBatteryApplication.cpp TopBatteryDocument.cpp TopBatteryAppUi.cpp FgrObserver.cpp BatteryCheck.cpp MyBitmapScaler.cpp
+CAPABILITY ReadDeviceData WriteDeviceData LocalServices UserEnvironment ReadUserData WriteUserData TrustedUI PowerMgmt ReadDeviceData WriteDeviceData ProtServ SwEvent NetworkServices Location SurroundingsDD

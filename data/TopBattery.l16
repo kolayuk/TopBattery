@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : TopBattery.l16
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+// localized strings for language: Russian (16)
+#define STR_TopBatteryApplication_3 "TopBattery"
+#define STR_TopBatteryApplication_4 "TopBattery"
+#define STR_TopBatteryApplication_1 ""
+#define STR_TopBatteryApplication_2 ""
